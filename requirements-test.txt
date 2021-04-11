@@ -1,5 +1,4 @@
+# Dependencies for running tests go here
 -r requirements.txt
 pytest
 pytest-cov
-moto
-coverage

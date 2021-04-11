@@ -11,27 +11,27 @@ with open(here.joinpath("requirements.txt"), encoding="utf-8") as f:
     requirements = f.readlines()
 
 setup(
-    name="TODO",
+    name="PACKAGE_NAME",
     version=version,
-    description="TODO",
+    description="A short description",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="TODO",
-    author="TODO",
-    author_email="TODO",
+    url="Url to the repo",
+    author="NAME",
+    author_email="CONTACT",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
         "Programming Language :: Python :: 3",
-        "TODO"
+        "Any other classifiers..."
     ],
-    keywords=["TODO"],
+    keywords=["Relevant", "keywords", "go", "here"],
     packages=find_packages(),
-    python_requires="TODO",
+    python_requires="Supported versions e.g. >=3.5",
     install_requires=[requirements],
     project_urls={
-        "Bug Reports": "TODO",
-        "Source": "TODO",
+        "Bug Reports": "Url to issues section of the repo",
+        "Source": "Url to the repo",
     }
 )

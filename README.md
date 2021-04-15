@@ -13,7 +13,7 @@ Short package description
 6. Add requirements to the requirements files
 7. Add ZEST_PAT as an environment variable containing a personal access token for the Github Zest user
 8. Add PYPI_API key as an environment variable containing a PyPI API key to release the package
-8. Fill out this README and remove this section
+9. Fill out this README and remove this section
 
 
 ## Installation

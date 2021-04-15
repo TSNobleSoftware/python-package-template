@@ -13,11 +13,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
       - name: Run black
-        run: |
-          black --check PACKAGE_NAME/ test/
+        run: black --check PACKAGE_NAME/ test/
       - name: Run flake8
-        run: |
-          flake8 PACKAGE_NAME/ test/
+        run: flake8 PACKAGE_NAME/ test/
   test:
     name: Unit test
     needs: lint
@@ -37,9 +35,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-test.txt
       - name: Test with pytest
-        run: |
-          export AWS_DEFAULT_REGION=us-east-1
-          pytest --cov=PACKAGE_NAME test/
+        run: pytest --cov=PACKAGE_NAME test/
       - name: "Upload coverage to Codecov"
         if: ${{ github.repository == 'PACKAGE_URL'}}
         uses: codecov/codecov-action@v1
